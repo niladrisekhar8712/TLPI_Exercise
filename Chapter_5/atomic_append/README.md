@@ -18,7 +18,7 @@ We launch two instances of the program simultaneously, each attempting to write 
 
 <b>Expected Size</b>: 2,000,000 bytes (Perfect serialization).
 
-<b> Actual Result (Non-Atomic)<b>: ~1,000,624 bytes (Massive data loss due to overwrites).
+<b> Actual Result (Non-Atomic)</b>: ~1,000,624 bytes (Massive data loss due to overwrites).
 
 ## How to Reproduce
 
@@ -80,5 +80,6 @@ When O_APPEND is set, the logic for "move to end" is moved from User Space to Ke
 ## Build & Requirements
 
 OS: Linux (Native or WSL2). Note: WSL2 on NTFS mounts may exhibit undefined behavior; use inside Linux root (~/) for consistent results.
+
 
 Compiler: GCC.
