@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     if ((f = write(fd, "abcd", 2)) != -1)
     {
         printf("Successfully written %d bytes to fd\n", f);
-        if (close(f) == -1)
+        if (close(fd) == -1)
         {
             errExit("There some error occured from write\n");
         }
