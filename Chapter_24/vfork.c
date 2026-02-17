@@ -32,6 +32,11 @@ int main(int argc, char *argv[])
     default:
         break;
     }
+    if (wait(NULL) == -1)
+    {
+        errExit("error in wait\n");
+    }
+    printf("Child has exited\n");
     int f;
     if ((f = write(fd, "abcd", 2)) != -1)
     {
