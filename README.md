@@ -22,8 +22,8 @@ The solutions are organized by the "Systems Architect" roadmap:
 | **05** | **File I/O: Atomicity** | `atomic_append.c` (Proof of race conditions without `O_APPEND`) | 
 | **06** | **Process Memory Layout** | `mem_segments.c` (Visualizing Stack, Heap, BSS, and Data segments) | 
 | **07** | **Memory Allocation** | `free_and_sbrk.c` (Manipulating the Program Break manually) | 
-| **24** | **Process Creation** | *Coming Soon* (`fork` mechanics and COW) | 
-| **...** | *...* | *...* | 
+| **24** | **Process Creation** | `fork` mechanics | 
+| **26** | **Child Process Monitoring** | `wait` mechanics | 
 
 ##  Build & Usage
 
@@ -52,4 +52,5 @@ gcc -Wall -Wextra -O2 filename.c -o output_name
 valgrind --leak-check=full ./output_name [arguments]
 
 # 4. Clean up binaries
+
 rm output_name
